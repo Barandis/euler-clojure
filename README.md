@@ -1,4 +1,4 @@
-# Euler Project algorithms in Clojure
+# Project Euler algorithms in Clojure
 
 [![Project Euler](https://projecteuler.net/profile/Barandis.png)][1]
 
