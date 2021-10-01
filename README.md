@@ -8,7 +8,7 @@ No actual solutions are printed inside any of these files, so if you want to use
 
 If you're good at Clojure, opening an issue to tell me about things you see that are wrong or non-idiomatic would also be quite welcome. I am still quite new to this language.
 
-This project isn't really set up to be executed as a single jar. (This may happen in the future but right now I'm just enjoying the problem solving.) Rather, the build system is used to run individual solutions. This build system is based on a deps.edn file by Practicalli and [is available here][2]. You will have to use it (or something similar) to run the individual solvers.
+This project isn't really set up to be executed as a single jar. (This may happen in the future but right now I'm just enjoying the problem solving.) Rather, the build system is used to run individual solutions. This build system is based on a deps.edn file by Practicalli and [is available here][2]. You do not need it to run anything in this repository, but if you're wanting to build your own stuff in Clojure, it's very nice and much lighter weight than Leiningen.
 
 For example, to run the solver for Problem 757, run this from the root project directory:
 
