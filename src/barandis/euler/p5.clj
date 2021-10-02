@@ -14,6 +14,10 @@
 ;; This is an LCM problem without using the term. Solution is an algorithm that
 ;; uses GCD to calculate the LCM of two numbers, then a `reduce` call applies
 ;; that algorithm to all numbers in a range.
+;;
+;; This solution can be run using `clojure -X:p5`. It will default to the 20
+;; input described in the problem. To run with another input, use `clojure -X:p5
+;; :input 10` or similar.
 
 (ns barandis.euler.p5)
 

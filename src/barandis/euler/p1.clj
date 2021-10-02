@@ -23,8 +23,8 @@
 ;; final answer.
 ;;
 ;; This solution can be run using `clojure -X:p1`. It will default to the 1000
-;; limit described in the problem. To run with another limit, use `clojure -X:p1
-;; :limit 100` or similar.
+;; input described in the problem. To run with another input, use `clojure -X:p1
+;; :input 100` or similar.
 
 (ns barandis.euler.p1)
 

@@ -20,6 +20,10 @@
 ;; The prime numbers are accumulated into a list instead of the usual vector
 ;; because it's convenient and efficient to have the largest prime factor be
 ;; first.
+;;
+;; This solution can be run using `clojure -X:p3`. It will default to the
+;; 600851475143 input described in the problem. To run with another input, use
+;; `clojure -X:p3 :input 1729` or similar.
 
 (ns barandis.euler.p3)
 

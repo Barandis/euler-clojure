@@ -23,6 +23,11 @@
 ;; number of digits. I went into this problem with every reason to believe that
 ;; the solution would have 6 digits, but I couldn't prove this so I went with
 ;; the more general solution.
+;;
+;; This solution can be run using `clojure -X:p4`. It will default a minimum of
+;; 100 and a maximum of 999, which reflects the three-digit numbers described in
+;; the problem. To run with different mins and maxes, use `clojure -X:p4 :min 10
+;; :max 99` or similar.
 
 (ns barandis.euler.p4)
 

@@ -16,6 +16,10 @@
 ;;
 ;; Once you have the lazy sequence, you can find any nth prime number by
 ;; indexing the sequence at n - 1.
+;;
+;; This solution can be run using `clojure -X:p7`. It will default to the 10001
+;; input described in the problem. To run with another input, use `clojure -X:p7
+;; :input 6` or similar.
 
 (ns barandis.euler.p7)
 

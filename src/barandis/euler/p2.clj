@@ -21,8 +21,8 @@
 ;; printed.
 ;;
 ;; This solution can be run using `clojure -X:p2`. It will default to the 4e6
-;; limit described in the problem. To run with another limit, use `clojure -X:p2
-;; :limit 4e16` or similar.
+;; input described in the problem. To run with another input, use `clojure -X:p2
+;; :input 4e16` or similar.
 
 
 (ns barandis.euler.p2)

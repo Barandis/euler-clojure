@@ -42,7 +42,7 @@
 (defn solve
   "Displays the difference between the sum of the squares and the square of the
    sum of the first (:input data) natural numbers. This number defaults to 100,
-   which makes the return value the solution of Project Euler problem 6."
+   which makes the displayed value the solution of Project Euler problem 6."
   ([] (solve {}))
   ([data] (-> (get data :input 100)
               difference
