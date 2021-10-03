@@ -29,10 +29,10 @@
     (reduce lcm args)))
 
 (defn solve
-  "Prints out the LCM of all positive integers up to (:max data). This number 
+  "Prints out the LCM of all positive integers up to (:input data). This number 
    defaults to 20, which makes the return value the solution to Project Euler 
    problem 5."
   ([] (solve {}))
-  ([data] (-> (apply lcm-all (range 1 (inc (get data :max 20))))
+  ([data] (-> (apply lcm-all (range 1 (inc (get data :input 20))))
               println
               time)))

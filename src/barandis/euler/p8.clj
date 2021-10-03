@@ -45,8 +45,7 @@
 ;; 23257530420752963450 :size 4` or similar. (:input can be either a number or a
 ;; string.)
 
-(ns barandis.euler.p8
-  (:require [clojure.string :as str]))
+(ns barandis.euler.p8)
 
 (def ^:private problem-8-number
   "The 1000-digit number from Project Euler problem 8, as a string."
@@ -83,14 +82,10 @@
 (defn- max-product
   "Calculates the products of the digits of each of the strings in the input
    sequence and returns the largest of them."
-  [strs]
-  (let [product
-        (fn [s] (reduce * (map #(Integer/parseInt %) (str/split s #""))))]
-    (loop [strs strs acc 0]
-      (if (zero? (count strs))
-        acc
-        (let [p (product (first strs))]
-          (recur (rest strs) (if (> p acc) p acc)))))))
+  [s size]
+  (letfn [(map-reduce [f1 f2 coll] (->> coll (map f1) (reduce f2)))
+          (product [s] (map-reduce #(Character/digit % 10) * s))]
+    (map-reduce product max (substrings s size))))
 
 (defn solve
   "Displays the maximum product derived from the digits of all possible
@@ -100,8 +95,7 @@
    for Project Euler problem 8, which makes the displayed value the solution
    to that problem."
   ([] (solve {}))
-  ([data] (-> (substrings (str (get data :input problem-8-number))
-                          (get data :size 13))
-              max-product
+  ([data] (-> (max-product (str (get data :input problem-8-number))
+                           (get data :size 13))
               println
               time)))
