@@ -42,6 +42,7 @@ The list of currently solved problems follows. I just started working on this an
 * [Problem 6: Sum square difference](src/barandis/euler/p6.clj)
 * [Problem 7: 10001st prime](src/barandis/euler/p7.clj)
 * [Problem 8: Largest product in a series](src/barandis/euler/p8.clj)
+* [Problem 9: Special Pythagorean triplet](src/barandis/euler/p9.clj)
 * [Problem 757: Stealthy numbers](src/barandis/euler/p757.clj)
 
 [1]: https://projecteuler.net/

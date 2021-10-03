@@ -10,6 +10,7 @@
   :p6 {:ns-default barandis.euler.p6 :exec-fn solve}
   :p7 {:ns-default barandis.euler.p7 :exec-fn solve}
   :p8 {:ns-default barandis.euler.p8 :exec-fn solve}
+  :p9 {:ns-default barandis.euler.p9 :exec-fn solve}
   :p757 {:ns-default barandis.euler.p757 :exec-fn solve :jvm-opts ["-Xmx4G"]}
   :test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "1.1.0"}
