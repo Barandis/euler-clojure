@@ -22,8 +22,8 @@
 ;; first.
 ;;
 ;; This solution can be run using `clojure -X:p3`. It will default to the
-;; 600851475143 input described in the problem. To run with another input, use
-;; `clojure -X:p3 :input 1729` or similar.
+;; 600851475143 target described in the problem. To run with another target, use
+;; `clojure -X:p3 :target 1729` or similar.
 
 (ns barandis.euler.p3)
 
@@ -39,11 +39,11 @@
       (conj acc n))))
 
 (defn solve
-  "Prints out the largest prime factor of (:input data). This number defaults
+  "Prints out the largest prime factor of (:target data). This number defaults
    to 600851475143, which makes the return value the solution of Project Euler
    problem 3."
   ([] (solve {}))
-  ([data] (-> (get data :input 600851475143)
+  ([data] (-> (get data :target 600851475143)
               prime-factorize
               first
               println

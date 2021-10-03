@@ -16,8 +16,8 @@
 ;; that algorithm to all numbers in a range.
 ;;
 ;; This solution can be run using `clojure -X:p5`. It will default to the 20
-;; input described in the problem. To run with another input, use `clojure -X:p5
-;; :input 10` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p5 :target 10` or similar.
 
 (ns barandis.euler.p5)
 
@@ -29,10 +29,10 @@
     (reduce lcm args)))
 
 (defn solve
-  "Prints out the LCM of all positive integers up to (:input data). This number 
+  "Prints out the LCM of all positive integers up to (:target data). This number 
    defaults to 20, which makes the return value the solution to Project Euler 
    problem 5."
   ([] (solve {}))
-  ([data] (-> (apply lcm-all (range 1 (inc (get data :input 20))))
+  ([data] (-> (apply lcm-all (range 1 (inc (get data :target 20))))
               println
               time)))

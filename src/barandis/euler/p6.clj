@@ -25,8 +25,8 @@
 ;; range. The difference is taken and displayed.
 ;;
 ;; This solution can be run using `clojure -X:p6`. It will default to the 100
-;; input described in the problem. To run with another input, use `clojure -X:p6
-;; :input 10` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p6 :target 10` or similar.
 
 (ns barandis.euler.p6)
 
@@ -41,10 +41,10 @@
 
 (defn solve
   "Displays the difference between the sum of the squares and the square of the
-   sum of the first (:input data) natural numbers. This number defaults to 100,
+   sum of the first (:target data) natural numbers. This number defaults to 100,
    which makes the displayed value the solution of Project Euler problem 6."
   ([] (solve {}))
-  ([data] (-> (get data :input 100)
+  ([data] (-> (get data :target 100)
               difference
               println
               time)))

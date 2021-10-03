@@ -24,14 +24,14 @@
 ;; are a Pythagorean triple.
 ;;
 ;; This formula produces only primitive triples like 3, 4, 5. Multiples of the
-;; primitive triples (like 6, 8, 10) are also triples and must also be 
-;; generated. To do this, a constant k is multipled by each component to come
-;; up with all of the other triples. k, m, and n are chosen so that triples
-;; above the target value aren't generated, so no time is wasted checking them.
+;; primitive triples (like 6, 8, 10) are also triples and must also be
+;; generated. To do this, a constant k is multipled by each component to come up
+;; with all of the other triples. k, m, and n are chosen so that triples above
+;; the target value aren't generated, so no time is wasted checking them.
 ;;
 ;; This solution can be run using `clojure -X:p9`. It will default to the 1000
-;; input described in the problem. To run with another input, use `clojure -X:p9
-;; :input 150` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p9 :target 150` or similar.
 
 (ns barandis.euler.p9)
 
@@ -57,10 +57,10 @@
 
 (defn solve
   "Displays the product of the components of the first Pythagorean triple whose
-   components add up to (:input data). :input defaults to 1000, which makes the
+   components add up to (:target data). :target defaults to 1000, which makes the
    displayed value the solution to Project Euler problem 9."
   ([] (solve {}))
-  ([data] (->> (get data :input 1000)
+  ([data] (->> (get data :target 1000)
                triples
                first
                (reduce *)

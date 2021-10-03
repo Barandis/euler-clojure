@@ -10,16 +10,16 @@
 ;;
 ;; What is the 10 001st prime number?
 
-;; The solution is trivial once you have a lazy sequence of all prime numbers.
-;; I adapted the Haskell implementation of just such a sequence from page 6 of
+;; The solution is trivial once you have a lazy sequence of all prime numbers. I
+;; adapted the Haskell implementation of just such a sequence from page 6 of
 ;; https://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf. 
 ;;
 ;; Once you have the lazy sequence, you can find any nth prime number by
 ;; indexing the sequence at n - 1.
 ;;
 ;; This solution can be run using `clojure -X:p7`. It will default to the 10001
-;; input described in the problem. To run with another input, use `clojure -X:p7
-;; :input 6` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p7 :target 6` or similar.
 
 (ns barandis.euler.p7)
 
@@ -38,10 +38,7 @@
   (nth primes (dec n)))
 
 (defn solve
-  "Displays the (:input data)th prime number. :input defaults to 10001, which
+  "Displays the (:target data)th prime number. :target defaults to 10001, which
    makes the displayed value the solution to Project Euler problem 7."
   ([] (solve {}))
-  ([data] (-> (get data :input 10001)
-              nth-prime
-              println
-              time)))
+  ([data] (-> (get data :target 10001) nth-prime println time)))

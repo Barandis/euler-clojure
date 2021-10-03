@@ -17,15 +17,15 @@ clojure -X:p757
 The solutions all default to the parameters necessary to solve the particular Project Euler problem, but you can pass keyword/value pairs when you run it to change the values. For example, Problem 757 works by default with the number 10^14, but the problem also lists the correct answer for 10^6. You can run the solver with that number like this:
 
 ```
-clojure -X:p757 :input 1e6
+clojure -X:p757 :target 1e6
 ```
 
-There's not necessarily a lot of rhyme or reason to the keyword names. You may have to look at the code.
+There's not necessarily a lot of rhyme or reason to the keyword names. Solutions with a single parameter normally name that parameter `target`, but that is not universal. You may have to look at the code.
 
 You could, of course, also run things from the REPL by loading in the appropriate file and running `(solve)`. If you want to use non-default arguments then, you can pass in a map with the appropriate keyword, as in this if you load `barandis.euler.p757` into your REPL:
 
 ```
-(solve {:input 1e6})
+(solve {:target 1e6})
 ```
 
 The reason for the strange format is that this is the format that allows individual solutions to be run from the command line.

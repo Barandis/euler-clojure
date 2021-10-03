@@ -23,8 +23,8 @@
 ;; final answer.
 ;;
 ;; This solution can be run using `clojure -X:p1`. It will default to the 1000
-;; input described in the problem. To run with another input, use `clojure -X:p1
-;; :input 100` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p1 :target 100` or similar.
 
 (ns barandis.euler.p1)
 
@@ -38,10 +38,10 @@
 
 (defn solve
   "Prints out the sum of all multiples of 3 and 5 up to and including 
-   (:input data). This number defaults to 1000, which makes the return value the
+   (:target data). This number defaults to 1000, which makes the return value the
    solution to Project Euler problem 1."
   ([] (solve {}))
-  ([data] (-> (let [limit (dec (get data :input 1000))
+  ([data] (-> (let [limit (dec (get data :target 1000))
                     sum-3 (series-sum limit 3)
                     sum-5 (series-sum limit 5)
                     sum-15 (series-sum limit 15)]

@@ -21,8 +21,8 @@
 ;; printed.
 ;;
 ;; This solution can be run using `clojure -X:p2`. It will default to the 4e6
-;; input described in the problem. To run with another input, use `clojure -X:p2
-;; :input 4e16` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p2 :target 4e16` or similar.
 
 
 (ns barandis.euler.p2)
@@ -39,7 +39,7 @@
 
 (defn solve
   "Prints out the sum of all even Fibonacci numbers that are less than or equal
-   to (:input data). This number defaults to 4000000, which makes the return
+   to (:target data). This number defaults to 4000000, which makes the return
    value the solution to Project Euler problem 2."
   ([] (solve {}))
-  ([data] (-> (get data :input 4e6) long even-fib-sum println time)))
+  ([data] (-> (get data :target 4e6) long even-fib-sum println time)))

@@ -16,8 +16,8 @@
 ;; This solution relies on the fact that these "stealthy" numbers are also
 ;; called *bipronic* numbers and that they also take the form of xy(x + 1)(y +
 ;; 1) where x and y are positive integers. They are sequence number A072389 in
-;; [OEIS](https://oeis.org/A072389) or the [Sequence
-;; Database](http://sequencedb.net/s/A072389).
+;;    [OEIS](https://oeis.org/A072389) or the [Sequence
+;;    Database](http://sequencedb.net/s/A072389).
 ;;
 ;; This solution simply calculates all bipronic numbers with an x and y
 ;; components between 1 and n^1/4 (since no bipronic could have a component of
@@ -34,8 +34,8 @@
 ;; enough heap space to not run out before finishing.
 ;;
 ;; This solution can be run using `clojure -X:p757`. It will default to the 1e14
-;; limit described in the problem. To run with another limit, use `clojure
-;; -X:p757 :limit 1e6` or similar.
+;; target described in the problem. To run with another target, use `clojure
+;; -X:p757 :target 1e6` or similar.
 
 (ns barandis.euler.p757)
 
@@ -62,7 +62,7 @@
 
 (defn solve
   "Prints out the number of 'stealthy' (bipronic) numbers up to and including
-   (:input data). This number defaults to 10^14, which makes the return value
+   (:target data). This number defaults to 10^14, which makes the return value
    the solution to Project Euler problem 757."
   ([] (solve {}))
-  ([data] (-> (get data :input 1e14) long calc-bipronics count println time)))
+  ([data] (-> (get data :target 1e14) long calc-bipronics count println time)))
