@@ -1,7 +1,5 @@
 # Project Euler algorithms in Clojure
 
-[![Project Euler](https://projecteuler.net/profile/Barandis.png)][1]
-
 I recently discovered [Project Euler][1] from a suggestion about things one could do to practice a new language. I've decided to find solutions to them as I can using Clojure, which is in fact a language I'm learning to use.
 
 No actual solutions are printed inside any of these files, so if you want to use them to come up with solutions you're going have to actually run the code. Using these to help work out your own answer is perfectly fine.
