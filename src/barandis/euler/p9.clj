@@ -28,6 +28,10 @@
 ;; generated. To do this, a constant k is multipled by each component to come
 ;; up with all of the other triples. k, m, and n are chosen so that triples
 ;; above the target value aren't generated, so no time is wasted checking them.
+;;
+;; This solution can be run using `clojure -X:p9`. It will default to the 1000
+;; input described in the problem. To run with another input, use `clojure -X:p9
+;; :input 150` or similar.
 
 (ns barandis.euler.p9)
 

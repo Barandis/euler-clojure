@@ -24,8 +24,8 @@
 (defn- lcm-all
   "Calculates the least common multiple of all of the args."
   [& args]
-  (let [gcd (fn [x y] (if (zero? y) x (recur y (mod x y))))
-        lcm (fn [x y] (/ (* x y) (gcd x y)))]
+  (letfn [(gcd [x y] (if (zero? y) x (recur y (mod x y))))
+          (lcm [x y] (/ (* x y) (gcd x y)))]
     (reduce lcm args)))
 
 (defn solve
