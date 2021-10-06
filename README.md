@@ -45,6 +45,7 @@ The list of currently solved problems follows. I just started working on this an
 * [Problem 11: Largest product in a grid](src/barandis/euler/p11.clj)
 * [Problem 12: Highly divisible triangular number](src/barandis/euler/p12.clj)
 * [Problem 13: Large sum](src/barandis/euler/p13.clj)
+* [Problem 14: Longest Collatz sequence](src/barandis/euler/p14.clj)
 * [Problem 757: Stealthy numbers](src/barandis/euler/p757.clj)
 
 [1]: https://projecteuler.net/
