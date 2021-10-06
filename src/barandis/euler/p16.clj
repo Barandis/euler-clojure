@@ -5,7 +5,6 @@
 
 ;; Solves Project Euler problem 16:
 ;;
-;;
 ;; 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
 ;;
 ;; What is the sum of the digits of the number 2^1000?
@@ -14,9 +13,9 @@
 ;; change them to digits) and reducing the result with + is an easy way to get
 ;; the sum. There's probably more effort in creating the BigInteger 2^1000.
 ;;
-;; This solution can be run using `clojure -X:p16`. It will default to the 2e1000
-;; target described in the problem. To run with another target, use `clojure
-;; -X:p16 :target 2e15` or similar.
+;; This solution can be run using `clojure -X:p16`. It will default to the
+;; 2e1000 target described in the problem. To run with another target, use
+;; `clojure -X:p16 :target 2e15` or similar.
 
 (ns barandis.euler.p16)
 

@@ -48,6 +48,7 @@ The list of currently solved problems follows. I just started working on this an
 * [Problem 14: Longest Collatz sequence](src/barandis/euler/p14.clj)
 * [Problem 15: Lattice paths](src/barandis/euler/p15.clj)
 * [Problem 16: Power digit sum](src/barandis/euler/p16.clj)
+* [Problem 17: Number letter counts](src/barandis/euler/p17.clj)
 * [Problem 757: Stealthy numbers](src/barandis/euler/p757.clj)
 
 [1]: https://projecteuler.net/
