@@ -3,7 +3,7 @@
 ;; This software is released under the MIT License.
 ;; https://opensource.org/licenses/MIT
 
-;; Solves Project Euler problem 11:
+;; Solves Project Euler problem 13:
 ;;
 ;; Work out the first ten digits of the sum of the following one-hundred
 ;; 50-digit numbers.

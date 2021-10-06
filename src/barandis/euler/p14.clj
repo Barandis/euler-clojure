@@ -3,7 +3,7 @@
 ;; This software is released under the MIT License.
 ;; https://opensource.org/licenses/MIT
 
-;; Solves Project Euler problem 11:
+;; Solves Project Euler problem 14:
 ;;
 ;; The following iterative sequence is defined for the set of positive integers:
 ;;
