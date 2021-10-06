@@ -17,6 +17,7 @@
   :p13 {:ns-default barandis.euler.p13 :exec-fn solve}
   :p14 {:ns-default barandis.euler.p14 :exec-fn solve}
   :p15 {:ns-default barandis.euler.p15 :exec-fn solve}
+  :p16 {:ns-default barandis.euler.p16 :exec-fn solve}
   :p757 {:ns-default barandis.euler.p757 :exec-fn solve :jvm-opts ["-Xmx4G"]}
   :test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "1.1.0"}
