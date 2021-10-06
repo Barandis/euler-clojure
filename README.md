@@ -43,6 +43,7 @@ The list of currently solved problems follows. I just started working on this an
 * [Problem 9: Special Pythagorean triplet](src/barandis/euler/p9.clj)
 * [Problem 10: Summation of primes](src/barandis/euler/p10.clj)
 * [Problem 11: Largest product in a grid](src/barandis/euler/p11.clj)
+* [Problem 12: Highly divisible triangular number](src/barandis/euler/p12.clj)
 * [Problem 757: Stealthy numbers](src/barandis/euler/p757.clj)
 
 [1]: https://projecteuler.net/

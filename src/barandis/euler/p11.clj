@@ -5,8 +5,6 @@
 
 ;; Solves Project Euler problem 11:
 ;;
-;;
-;;
 ;; In the 20×20 grid below, four numbers along a diagonal line have been marked
 ;; in red.
 ;;
@@ -47,6 +45,10 @@
 ;; of that sequence (which are each sequences themselves) have their elements
 ;; reduced into products. Finally the entire sequence is reduced through the
 ;; max function to come up with the largest product.
+;;
+;; This solution can be run using `clojure -X:p11`. It will default to using the
+;; matrix presented above, with a length of 4. To run with another target, use 
+;; `clojure -X:p11 :length 2 :matrix [[1 2 3] [4 5 6]]` or similar.
 
 (ns barandis.euler.p11)
 
